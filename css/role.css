@@ -1,0 +1,135 @@
+/* 女性角色（激活状态），红色系 */
+.聂莫黎 {
+    color: #d30101;
+}
+
+/* 橙红色 */
+.聂莫琪 {
+    color: #f1427d;
+}
+
+/* 深粉色 */
+.汤婆婆 {
+    color: #fd5145cb;
+}
+
+/* 红色 */
+.陶梦嫣 {
+    color: #bf4c00;
+}
+
+/* 浅橙红色 */
+.王娇彤 {
+    color: #EF5350;
+}
+
+/* 粉色 */
+.祝小红 {
+    color: #FF5722;
+}
+
+/* 橙黄色 */
+.红新娘 {
+    color: #D32F2F;
+}
+
+/* 深红色 */
+.女黑 {
+    color: #C2185B;
+}
+
+/* 紫罗兰红 */
+.新娘1,
+.新娘2,
+.新娘3,
+.新娘4,
+.新娘5,
+.新娘6 {
+    color: #B71C1C;
+}
+
+/* 男性角色（激活状态），蓝色系 */
+.大巫贤 {
+    color: #007BFF;
+}
+
+/* 亮蓝色 */
+.道长 {
+    color: #009688;
+}
+
+/* 青色 */
+.梁少平 {
+    color: #2196F3;
+}
+
+/* 亮蓝紫色 */
+.宁子服 {
+    color: #00BCD4;
+}
+
+/* 青色偏绿 */
+.煞金刚 {
+    color: #607D8B;
+}
+
+/* 深蓝色 */
+.申墨卿 {
+    color: #3F51B5;
+}
+
+/* 靛青色 */
+.亲友 {
+    color: #5C6BC0;
+}
+
+/* 紫色 */
+.村民 {
+    color: #03A9F4;
+}
+
+.宁子服_陶梦嫣 {
+    background: -webkit-linear-gradient(to right, #00BCD4 30%, #ff6600 70%);
+    /* Chrome, Safari */
+    background: linear-gradient(to right, #00BCD4 30%, #ff6600 70%);
+    /* 标准语法 */
+    -webkit-background-clip: text;
+    /* Chrome, Safari */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Chrome, Safari */
+    color: transparent;
+    /* 标准语法, 也可以用在Firefox, Opera等 */
+}
+
+/* 画外音 */
+.画外音 {
+    color: white;
+}
+
+.前板 {
+    font-size: 1.1em;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.后板 {
+    font-size: 1.1em;
+    color: #FF00FF;
+    font-weight: bold;
+}
+
+.前板_后板 {
+    font-size: 1.1em;
+    background: -webkit-linear-gradient(to right, #FFD700 40%, #FF00FF 60%);
+    /* Chrome, Safari */
+    background: linear-gradient(to right, #FFD700 40%, #FF00FF 60%);
+    /* 标准语法 */
+    -webkit-background-clip: text;
+    /* Chrome, Safari */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Chrome, Safari */
+    color: transparent;
+    /* 标准语法, 也可以用在Firefox, Opera等 */
+}

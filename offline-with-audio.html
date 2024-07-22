@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="yes">
+    <title>提词器-离线有声版</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/role.css">
+</head>
+
+<body>
+    <div id="app">
+        <audio src="audio/music.mp3"></audio>
+        <div class="status-bar" :class="connectClass">
+            <span class="status-running">运行状态<br>{{ status }}</span>
+            <span class="time-remaining">下一句<br>{{ nextTime }}</span>
+            <span class="current-time">总时间<br>{{ time }}</span>
+
+        </div>
+        <div class="container">
+            <ul :style="transformStyle">
+                <li v-for="(item, index) in lyricsArray" click :key="index" :class="[item.role,activeIndexClass(index)]"
+                    @click="setActiveIndex(index)">
+                    {{ item.content }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="control-bar" :class="connectClass">
+            <button v-show="['stopped'].includes(status)" @click="sendCommand('start')">开始</button>
+            <button v-show="['running', 'paused'].includes(status)" @click="sendCommand('stop')">停止</button>
+
+            <button v-show="['running'].includes(status)" @click="sendCommand('pause')">暂停</button>
+            <button v-show="['paused'].includes(status)" @click="sendCommand('resume')">继续</button>
+
+            <button @click="sendCommand('rewind')">快退</button>
+            <button @click="sendCommand('forward')">快进</button>
+
+            <button @click="sendCommand('reset')">重置</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
+</div>
+</div>
+
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/offline-with-audio-controller.js"></script>
+
+</html>

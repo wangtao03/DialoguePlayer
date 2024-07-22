@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body,
+html {
+    background: #121212;
+    color: #a7a7a7;
+    text-align: center;
+}
+
+#app {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.status-bar,
+.control-bar {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    padding: 0 5%;
+}
+
+.control-bar button {
+    width: 80%;
+    height: 60%;
+}
+
+.connected {
+    background-color: rgba(0, 153, 0, 0.8);
+    color: #f0f0f0;
+}
+
+.disconnected {
+    background-color: rgba(153, 0, 0, 0.8);
+    color: #f0f0f0;
+}
+
+.status-running {
+    font-weight: bold;
+    color: #000080;
+}
+
+.time-remaining {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.current-time {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px,50px; */
+    overflow: hidden;
+}
+
+.container ul {
+    /* transition: 0.3s; */
+    transition: all 0.3s ease-in;
+    white-space: nowrap;
+}
+
+.container li {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    height: 7vw;
+    line-height: 7vw;
+    list-style: none;
+    font-size: 4.5vw;
+}
+
+.container li.active {
+    opacity: 1;
+    font-weight: bold;
+    transform: scale(1.2);
+}
